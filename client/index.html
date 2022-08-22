@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body class="container">
+   
+   <div>
+     <button id="complimentButton">Get a compliment</button>
+    <button id="fortuneButton">Get a fortune</button>
+    <!-- fortuneButton is a complet replica of the complimentButton since it was doing the same thing -->
+   </div> 
+
+    <div>
+      <!-- button is the same but function is different since it needs to gather information from a database-->
+      <button id="quotesButton">Inspirational Quotes</button>
+
+
+      <!-- for to insert new quotes that are being added  -->
+      <form>
+        <input 
+            type='text '
+            id="addQuote"
+            placeholder="Write an inspirational quote, and reference who, here."/>
+        <button>add quote</button>
+    </form>
+
+      <section id="quotesContainer"></section>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+    
+  </body>
+</html>
